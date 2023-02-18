@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:ital,wght@0,100;1,200&display=swap');
+@import url(../Proyecto/css/menu.css);
 *{
   margin: 0;
   padding: 0;
@@ -10,9 +11,10 @@ body {
   overflow-x: hidden;
   width: 100%;
   height: 100%;
-  background-image: url(/assets/botellas-vidrio-cerveza-vidrio-hielo-sobre-fondo-oscuro.jpg);
+  background-image: url(/assets/back.jpg);
   background-repeat:no-repeat;
   background-size: cover;
+  opacity: 0.9;
 }
 .navegacion{
   display:flex;
@@ -25,14 +27,12 @@ body {
 
 }
 .navbar{
-  background-color: rgba(48, 49, 3, 0.726);
+  background-color: rgba(78, 52, 9, 0.726);
   display:flex;
   width: 100%;
   justify-content: space-between;
   padding: 2em;
-  position:fixed;
-  height: 120px;
-  
+  position:fixed;  
 }
 .navbar li{
   list-style: none;
@@ -43,34 +43,6 @@ body {
 .header-logo a img{
   padding: 0;
   width: 170px;
-}
-.menu {
-  display: flex;
-  width: 40%;
-  justify-content: space-around;
-  
-}
-.menu li {
-  
-  list-style: none;
-  padding: 1em;
-}
-.menu a {
-  color: #f6cf09;
-  text-decoration: none;
-  padding: 10px 20px;
-}
-.menu li:hover a{
-  background-color: #c7b405;
-  color: #7b7d13;
-}
-
-.menu .active {
-  color: #ffff01;
-}
-
-.menu li a:hover {
-  color: #ffee00;
 }
 .banner{
   background-image: url(/assets/cocteles-arreglo-coctelera-club-nocturno.jpg);
@@ -86,14 +58,14 @@ body {
   text-align: center;
   padding: 50px;
   font-size: 30px;
-  color:#f5e900
+  color:#fff;
 }
 .banner p{
   z-index: 1;
   text-align: center;
   padding: 50px;
   font-size: 30px;
-  color:#fff200;
+  color:#fff;
   text-shadow: -3px 25px 50px -1px rgb(254, 254, 254);
 }
 .main{
@@ -118,28 +90,35 @@ body {
   width: 100%;
   height: 350px;
   background-size: cover;
+  margin-bottom: 20px;
   
 }
 
-.card1 button{
+button{
   padding: 10px 20px;
-  background-color: #d5dc07;
+  background-color: #000000;
   border: none;
   border-radius: 20px;
-  margin-top: 10px;
-  box-shadow: 1px 3px 11px -5px rgba(227, 231, 102, 0.69);
+  margin-top: 20px;
+  box-shadow: rgba(0,0,0,0.5);
+  transition: all 300ms ;
+  color: #fff;
+} 
+button a{
+  text-decoration: none;
+  color: #fff;
+}
+button:hover {
+  padding: 15px 25px;
+  background-color: rgba(78, 52, 9, 0.9);
 
 }
-.card1 button:hover{
-  background-color: #93850a60;
-  color: #fbff01;
-}
 .cardUno{
-  background-color: #96969866;
+  background-color: #ffffff;
+  border-radius: 10px;
   padding: 30px;
   margin-bottom: 10px;
-  border: 2px solid black;
-  box-shadow: 1px 3px 5px -3px rgba(227, 235, 3, 0.771);
+  box-shadow: 4px 4px 5px 10px rgba(0,0,0,0.5);
 }
 
 .section-rigth{
@@ -154,9 +133,10 @@ body {
   padding: 10px; 
 }
 .section-r{
-  background-color: #96969866;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 4px 4px 5px 10px rgba(0,0,0,0.5) ;
   padding: 30px;
-  border: 2px solid black;
   padding: 10px;
   text-align: center;
 }
@@ -171,19 +151,7 @@ body {
   background-size: cover;
   
 }
-.section-r button{
-  padding: 10px 20px;
-  background-color: #d5dc07;
-  border: none;
-  border-radius: 20px;
-  margin-top: 10px;
-  box-shadow: 1px 3px 11px -5px rgba(227, 231, 102, 0.69);
 
-}
-.section-r button:hover{
-  background-color: #93850a60;
-  color: #fbff01;
-}
 .estrellas span:nth-child(1){
   color:#f6cf09;
 }
@@ -200,10 +168,12 @@ body {
 
 .pie-pagina{
   width: 100%;
-  background-color: #7b7d1353;
+  background-color: rgba(78, 52, 9, 0.726);
+  opacity: 0.9;
 }
 .pie-pagina .box h2{
   padding:15px;
+  color: #fff;
 }
 .pie-pagina .grupo-1{
   width: 100%;
@@ -230,9 +200,9 @@ body {
   width: 65px;
   height: 45px;
   line-height: 45px;
-  color:rgb(172, 171, 81);
+  color:rgba(78, 52, 9, 0.726);
   margin-right: 10px;
-  background-color: #00090c;
+  background-color: #fff;
   text-align: center;
   transition: all 300ms ease;
 }
@@ -246,4 +216,66 @@ body {
   padding: 15px 10px;
   text-align:center;
   font-size: 20px;
+  color: #ffffff;
+}
+.tamaño{
+  padding-left: 40px;
+  box-sizing: content-box;
+}
+.menu2{
+  width: 120px;
+  height: 70px;
+  padding:10px;
+}
+@media(max-width:1200px){
+  
+  .cards{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+  }
+  .card1{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .cardUno{
+    width: 45%;
+    min-width: 300px;
+    margin: 10px;
+  }
+  button{
+    display: block;
+    margin:  20px auto;
+  }
+  .card1 img{
+    height: 50%;
+
+  }
+  .main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+  .section-rigth{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+@media (max-width:700px){
+  .pie-pagina{
+    display:flex;
+  }
+  .box{
+    display: none;
+  }
+  .grupo-1{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
 }
