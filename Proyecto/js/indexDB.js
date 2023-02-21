@@ -14,8 +14,8 @@ class comentario{
     per.nombre =arr[0].value
     per.comentario =arr[1].value
     console.log(per)
-    let elem = document.querySelector('input[name="estrellas"]:cheked');
-    if(elem){
+    let elem = document.querySelector('input[name="estrellas"]');
+    if(elem.checked){
       console.log(elem.value)
     }
   })
