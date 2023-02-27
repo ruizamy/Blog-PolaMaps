@@ -163,7 +163,7 @@ body {
     width: 100%;
     justify-content: space-between;
     padding: 2em;
-    position:fixed;  
+
   }
   .navbar li{
     list-style: none;
@@ -174,4 +174,13 @@ body {
   .header-logo a img{
     padding: 0;
     width: 170px;
+  }
+  .tamaño{
+    padding-left: 40px;
+    box-sizing: content-box;
+  }
+  .menu2{
+    width: 120px;
+    height: 70px;
+    padding:10px;
   }
