@@ -7,7 +7,6 @@ body{
   height: 100%;
   background-color: #d3d3d3;
   background:url(../../assets/back.jpg) center/ cover no-repeat;
-  background-attachment: fixed;
   opacity: 0.9;
 }
 header{
@@ -104,8 +103,8 @@ iframe{
   display: flex;
   flex-direction: column;
 }
-.form input,.form label,.form textarea{
-  margin: 5px 10px;
+.form input,.form label{
+  margin: 10px;
 }
 input[type="date"]{
   width: 30%;
@@ -146,14 +145,14 @@ input[type="date"]{
   }
   100%{
     opacity: 1;
-    height: 430px;
+    height: 390px;
     margin-bottom: 30px;
   }
 }
 @keyframes desaparecer {
   0%{
     opacity: 1;
-    height: 460px;
+    height: 380px;
   }
   100%{
     opacity: 0;
