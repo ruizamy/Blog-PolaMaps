@@ -44,11 +44,21 @@ body {
   color:#fff;
   text-shadow: -3px 25px 50px -1px rgb(254, 254, 254);
 }
-.main{
-  display: grid;
-  grid-template-columns: repeat(10,1fr);
-  align-items:start;
-  gap: 2em;
+
+.mapa{
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px 3px rgba(0,0,0,0.5);
+  align-items: center;
+}
+.ttmapa{
+  font-size: 1.5em;
+  margin-left: 40p;
+}
+iframe{
+  width: 100%;
+  
 }
 /* Cards Alexa */
 
@@ -87,20 +97,6 @@ body {
   font-size: 25px;
   font-weight: 300;
 }
-.informacion .precio {
-  font-size: 20px;
-  font-weight: 500;
-}
-.informacion .precio span{
-  font-size: 17px;
-  font-weight: 300;
-}
-.informacion .info {
-  width: 400px;
-  padding:20px;
-  word-wrap: break-word;
-  text-align: center; 
-}
 
 .informacion button{
   background-color: #e1e6ef;
@@ -117,12 +113,14 @@ body {
   background-color: #cbd5e4;
   padding: 0;
 }
-
-
-.tamaño{
-  padding-left: 40px;
-  box-sizing: content-box;
+.informacion .info {
+  width: 400px;
+  padding:20px;
+  word-wrap: break-word;
+  text-align: center;
+  
 }
+
 
 @media(max-width:1200px){
   
