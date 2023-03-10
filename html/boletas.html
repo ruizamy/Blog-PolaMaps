@@ -5,8 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Eventos</title>
-  <link rel="stylesheet" href="css/menu.css">
-  <link rel="stylesheet" href="css/eventos.css">
+  <link rel="stylesheet" href="../css/menu.css">
+  <link rel="stylesheet" href="../css/eventos.css">
   <link rel="shortcut icon" href="assets/img/icons8-cerveza-60.png" type="image/x-icon">
   <script src="https://kit.fontawesome.com/de4f5a14b9.js" crossorigin="anonymous"></script>
 </head>
@@ -24,10 +24,12 @@
       <div class="desplegable">
       </div>
       <ul class="lista tamaño">
-              <li><a href="home.html" class="direc anima">Home</a></li>
-              <li><a href="eventos.html" class="direc anima">Eventos</a></li>
-              <li><a href="nosotros.html"class="direc anima">Nosotros</a></li>
-              <li><a href="login.html"class="direc anima">Login</a></li>
+        <li><a href="../html/index.html" class="direc anima">Home</a></li>
+        <li><a href="../html/boletas.html" class="direc anima">Boletas</a></li>
+        <li><a href="../html/acercaNosotros.html" class="direc anima">Nosotros</a></li>
+        <li><a href="../html/login.html" class="direc anima">Login</a></li>
+        <li><a href="../html/adminCovers.html"class="direc anima">Administrador</a></li> 
+        <li><a href="../html/contactenos.html"class="direc anima">Contactenos</a></li>  
       </ul>
       </nav>
     </header>
@@ -39,7 +41,9 @@
       <h2>Los Eventos</h2>
       <p>Te mantenemos informado de los mejores Eventos que hay!</p>
     </div>
-
+<!-- Aqui se visualizan las cards -->
+    <div id="contenedor" class="contenedor"> </div>
+<!--
     <section class="container__eventos">
       <article class="card">
         <div class="Frontal">
@@ -112,7 +116,7 @@
           <button><a href="https://www.tuboleta.com/images/Eventos/IDARTES/planetario.html">Información</a></button>
         </div>
       </article>
-    </section>
+    </section>-->
   </main>
 
 
@@ -137,9 +141,9 @@
       </div>
    
   </footer>
+  <script src="../js/boletas.js"></script> 
+  <script src="../js/js.js"></script> 
  
-  <script src="js/js.js"></script> 
-
     
 </body>
 </html>
