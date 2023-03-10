@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="PolaMap" content="bares, restaurantes">
+  <mata name="keywords" content="bares, restaurantes, convers, buscar bar,">
+  <title>PolaMap</title>
+  
+  <link rel="shortcut icon" href="../img/iconCerveza.webp" type="icon de una cerveza">
+  <link rel="stylesheet" href="../css/index.css">
+  <script src="https://kit.fontawesome.com/de4f5a14b9.js" crossorigin="anonymous"></script> <!--iconos de red social-->
+</head>
+
+<body>
+  <div class="navegacion">
+    <header>
+    <nav class="navbar">
+    <div class="header-logo"> <!--redireccion al home-->
+      <a href="../html/index.html">
+        <img src="../img/logoPolaMap.webp" alt="LogoPaginaPolaMap">
+      </a>
+    </div>
+    <h2 class="menu menu2">Menu</h2>
+    <div class="desplegable">
+    </div>
+    <ul class="lista tamaño">
+            <li><a href="../html/index.html" class="direc anima">Home</a></li>
+            <li><a href="../html/boletas.html" class="direc anima">Boletas</a></li>
+            <li><a href="../html/acercaNosotros.html"class="direc anima">Acerca de Nosotros</a></li>
+            <li><a href="../html/contactenos.html"class="direc anima">Contactenos</a></li> 
+            <li><a href="../html/login.html"class="direc anima">Login</a></li>               
+    </ul>
+    </nav>
+    </header>
+  </div>
+
+    <section class="Mapa"> <!--Mapa google-->
+    <h3 class="ubi-ti">TU BAR FAVORITO</h3>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15907.904975840785!2d-74.1357292!3d4.5982783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sco!4v1678465702559!5m2!1ses!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    <hr>
+
+  <main class="main">
+    
+    <h1>PolaMap</h1>
+
+    <div>
+      <form action="../html/index.html/id=contenedorBares" method="get"> <!--boton de busqueda-->
+        <input type="text" name="query" placeholder="Buscar..."> <button type="submit">Buscar</button>
+      </form>
+    </div>
+
+    <div id="contenedorBares" class="contenedor"> <!--seccion bares-->
+      <button><a href="opinion.html">Mas informacion</a></button>
+    </div>    
+  </main>
+
+
+  <footer class="pie-pagina">
+  <div class="grupo-1">
+     <div class="box">
+        <a href="../html/index.html">
+          <img src="../img/logoPolaMap.webp" alt="LogoPaginaPolaMap">
+        </a>
+        <h4>"Cuando la noche cae y la sed despierta, los mejores bares de la ciudad te esperan. Descubre el ambiente más vibrante, la música más pegajosa y los cócteles más deliciosos en nuestra selección exclusiva de bares. Convierte cada noche en una experiencia inolvidable, y no te pierdas de nada gracias a nuestros increíbles covers."</h4>
+     </div>
+    <div class="box">
+      <h2>¡Únete a la fiesta ahora!</h2>
+      <div class="red-social">
+      <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+      <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+      <a href="https://twitter.com/" class="fa fa-twitter"></a>
+      <a href="https://www.youtube.com" class="fa fa-youtube"></a>
+    </div>
+  </div>
+    <div class="grupo-2">
+      <small >&copy; 2022 <b>Facturando en Dolares</b> - Todos los derechos reservados</small>
+    </div>
+ 
+  </footer>
+  <script src="../js/js.js"></script>
+</body>
+</html>
