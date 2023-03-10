@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:ital,wght@0,100;1,200&display=swap');
-@import url('../css/menu.css');
+@import url(../css/menu.css);
 *{
   margin: 0;
   padding: 0;
@@ -16,16 +16,7 @@ body {
   background: url(../img/back.jpg) center/ cover no-repeat;
   opacity: 0.9;
 }
-header {
-  display: flex;
-  justify-content: space-between;
-  padding: 30px 50px;
-  margin-top: 0;
-  background-color: rgba(78, 52, 9, 0.726);
-  width: 100%;
-  
-  
-}
+
 section {
   margin:50px;
 }
