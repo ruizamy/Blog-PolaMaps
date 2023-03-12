@@ -11,8 +11,8 @@
   padding: 15px;
   font-size: 30px;
   background-color: #FDDB31;
-
-}
+  }
+  
 .desplegable{
   position: fixed;
   top: 0;
@@ -58,7 +58,6 @@ li:hover{
   padding:15px 15px;
   border-bottom: 2px solid;
 }
-
 .navegacion{
   display:flex;
   width: 100vw;
@@ -86,7 +85,7 @@ li:hover{
   border-radius: 15px;
   border:  #000 solid;  
   width: 170px;
-}
+
 /*footer*/
 .pie-pagina{
   width: 100%;
