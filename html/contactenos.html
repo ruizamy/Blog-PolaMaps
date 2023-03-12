@@ -14,45 +14,41 @@
 	<link
 		href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@100&display=swap"
 		rel="stylesheet" />
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+		crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="../css/contactenos.css" />
 	<title>Contactenos</title>
 </head>
 
 <body>
-	<header>
-		<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-			<div class="container-fluid">
-				<a class="navbar-brand" href="#">PolaMap</a>
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-					data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
-					aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse" id="navbarCollapse">
-					<ul class="navbar-nav me-auto mb-2 mb-md-0">
-						<li class="nav-item">
-							<a class="nav-link active" aria-current="page" href="#">Quienes somos</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Home</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link disabled">Contactenos</a>
-						</li>
-					</ul>
-					<form class="d-flex" role="search">
-						<input class="form-control me-2" type="search" placeholder="Mejores lugares"
-							aria-label="Search" name="checkbox" />
-						<button class="btn btn-outline-success" type="submit">
-							Buscar
-						</button>
-					</form>
-				</div>
-			</div>
-		</nav>
-	</header>
-	<main>
+	<div class="navegacion">
+    <header>    
+      <nav class="navbar">
+      <div class="header-logo"> 
+        <a href="#">
+          <img src="../img/logoPolaMap.webp" alt="Logo">
+        </a>
+      </div>
+      <h2 class="menu menu2">Menu</h2>
+      <div class="desplegable">
+      </div>
+      <ul class="lista tamaño">
+  
+				<li><a href="../html/index.html" class="direc anima">Home</a></li>
+				<li><a href="../html/boletas.html" class="direc anima">Boletas</a></li>
+				<li><a href="../html/acercaNosotros.html" class="direc anima">Nosotros</a></li>
+				<li><a href="../html/login.html" class="direc anima">Login</a></li>
+				<li><a href="../html/adminCovers.html"class="direc anima">Administrador Boletas</a></li> 
+				<li><a href="../html/adminBares.html"class="direc anima">Administrador bares</a></li> 
+				<li><a href="../html/contactenos.html"class="direc anima">Contactenos</a></li>         
+      </ul>
+      </nav>
+      </header>
+    </div>
+		<main class="main">
 		<section>
+      <article>
 			<h2>Contactenos</h2>
 			<p>Si tienes alguna duda o sugerencia no dudes en contactarnos</p>
 			<form action="https://formsubmit.co/polamapgeneration@gmail.com" method="POST"
@@ -100,12 +96,13 @@
 					</div>
 				</div>
 			</form>
+      </article>
 		</section>
 	</main>
+	
 	<script src="../js/contactenos.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-		integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-		crossorigin="anonymous"></script>
+  <script src="../js/js.js"></script>
+	
 </body>
 
 </html>

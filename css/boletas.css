@@ -217,12 +217,4 @@ button:hover {
     display:flex;
   }
 }
-.tamaño{
-  padding-left: 40px;
-  box-sizing: content-box;
-}
-.menu2{
-  width: 120px;
-  height: 70px;
-  padding:10px;
-}
+
