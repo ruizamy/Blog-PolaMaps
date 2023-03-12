@@ -100,7 +100,8 @@ li:hover{
   width: 100%;
   background-color: rgba(78, 52, 9, 0.726);
   opacity: 0.9;
-  position: relative;
+  position:relative;  
+  
 }
 .pie-pagina .box h2{
   padding:15px;
