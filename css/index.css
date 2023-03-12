@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Rhodium+Libre&display=swap');
 @import url(../css/menu.css);
 
 *{
@@ -7,17 +6,12 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: 'Rhodium' , sans-serif;
+body { 
+  font-family: 'Rhodium', sans-serif;
   overflow-x: hidden;
   width: 100%;
   height: 100%;
-  background-image: url("../img/back.jpg");
-  background-repeat:no-repeat;
-  background-size: cover;
-  /* fija la imagen de fondo para que no se mueva "fija" */
-  background-attachment: fixed;
-  opacity: 0.9;
+  background-color: #FCF8FF ;
 }
 
 .banner{
@@ -34,15 +28,15 @@ body {
   text-align: center;
   padding: 50px;
   font-size: 30px;
-  color:#fff;
+  color: #FCF8FF;
 }
 .banner p{
   z-index: 1;
   text-align: center;
   padding: 50px;
   font-size: 30px;
-  color:#fff;
-  text-shadow: -3px 25px 50px -1px rgb(254, 254, 254);
+  color: #FCF8FF;
+  text-shadow: -3px 25px 50px -1px #000;
 }
 .main{
   display: grid;
@@ -103,18 +97,18 @@ body {
 }
 
 .informacion button{
-  background-color: #e1e6ef;
+  background-color: #FCF8FF;
   width: 100px;
   height: 35px;
   border-radius: 10px;
-  border: none;
+  border: #000 solid;
   font-size: 17px;
   font-weight: 300;
   cursor: pointer;
   margin-bottom: 40px;
 }
 .informacion button:hover{
-  background-color: #cbd5e4;
+  background-color: #FCF8FF;
   padding: 0;
 }
 
