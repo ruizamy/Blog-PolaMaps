@@ -89,12 +89,10 @@ li:hover{
 /*footer*/
 .pie-pagina{
   width: 100%;
-
   background-color: rgba(78, 52, 9, 0.726);
   opacity: 0.9;
-  position:relative;  
-  
-
+  position:absolute; 
+  z-index:-1; 
 }
 .pie-pagina .box h2,h4{
   padding:5px;
