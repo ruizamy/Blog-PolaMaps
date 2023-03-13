@@ -21,6 +21,7 @@ body {
   align-items: flex-start;
   margin: 50px auto 45px auto;
   width: 90%;
+  padding: 50px;
   flex-wrap: wrap;
   gap: 40px;
 }
@@ -31,11 +32,10 @@ body {
   justify-content: flex-start;
   background-color: #b99b04eb;
   height: 600px;
-  width: 400px;
   border-radius: 20px;
   flex-direction: column;
-  padding-top: 35px;
-  gap: 25px;
+  padding: 35px 0;
+  gap: 5px;
   flex: 1 1 300px;
 
 }
@@ -44,6 +44,8 @@ body {
   display: flex;
   flex-direction: column;
   gap: 5px;
+  width: 300px;
+  padding:20px;
 }
 
 .contenedor>div>form>input,textarea,
@@ -165,4 +167,36 @@ h1 {
 
 .noExsiteError::after {
   content: 'Este elemento no existe';
+}
+@media (max-width:1200px){
+ 
+  .contenedor{
+    justify-content: center;
+    align-items: center;
+  }
+ 
+  .contenedor div:nth-child(3){
+   
+    height: 300px;
+    max-width: 400px;
+  }
+}
+@media (max-width:822px){
+  
+  .contenedor div:nth-child(2){
+    height: 400px;
+    
+  }
+  .contenedor div:nth-child(3){
+    height: 300px;
+    max-width: 700px;
+    display: flex;
+    
+  }
+}
+@media (max-width:450px){
+  .contenedor {
+    margin: 10px;
+  }
+ 
 }
