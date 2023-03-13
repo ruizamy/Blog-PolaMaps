@@ -13,47 +13,47 @@ body {
   height: 100%;
   background-color: #FCF8FF ;
 }
-
-.banner{
-  background-image: url("../img/cocteles-arreglo-coctelera-club-nocturno.jpg");
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  width: 100vw;
-  height: 350px;
-  box-shadow: -3px 9px 20px -5px rgb(128, 117, 16);
-}
-.banner h2{
-  z-index: 1;
-  text-align: center;
-  padding: 50px;
-  font-size: 30px;
-  color: #FCF8FF;
-}
-.banner p{
-  z-index: 1;
-  text-align: center;
-  padding: 50px;
-  font-size: 30px;
-  color: #FCF8FF;
-  text-shadow: -3px 25px 50px -1px #000;
-}
-
-.mapa{
-  background-color: #ffffff;
+.Mapa{
+  background-color: #FDDB31;
+  border:#000 solid;
+  margin: 30px;
   padding: 20px;
+  height: 10%;
   border-radius: 10px;
-  box-shadow: 3px 3px 10px 3px rgba(0,0,0,0.5);
   align-items: center;
 }
 .ttmapa{
   font-size: 1.5em;
+  text-align: center;
+  border: #000;
   margin-left: 40p;
+  background-color: #C2DBF2;
 }
 iframe{
   width: 100%;
-  
 }
+
+.main{
+  height: 80%;
+}
+
+.ttcontenedor {
+  font-size: 1.5em;
+  text-align: center;
+  border: #000 solid;
+  width: 50%;
+  margin: 1% 25% 0% 25%;
+  background-color: #C2DBF2;
+  border-radius: 10px;
+}
+.botondebuscar {
+  font-size:medium;
+  text-align: left;
+  width: 50%;
+  margin: 1% 25% 3% 25%;
+}
+
+
 /* Cards Alexa */
 
 .contenedor{
@@ -68,15 +68,14 @@ iframe{
   height: 340px;
   object-fit: cover;
   border-radius: 20px 20px 0px 0px;
-  
 }
 .contenedor>div{
-  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
-  background-color: #ffe604;
-  border-radius: 20px;
+  border: #000 solid;
+  background-color: #C2DBF2;
+  border-radius: 25px 25px 25px 25px;
 }
 .contenedor>div:hover{
-  background-color: #11294d;
+  background-color: #FDDB31;
 }
 
 .informacion{
@@ -87,9 +86,10 @@ iframe{
   gap: 15px;
 }
 .informacion>p:first-child{
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Rhodium', sans-serif;
   font-size: 25px;
   font-weight: 300;
+  font-weight: bold;
 }
 
 .informacion button{
@@ -104,7 +104,7 @@ iframe{
   margin-bottom: 40px;
 }
 .informacion button:hover{
-  background-color: #FCF8FF;
+  background-color: #C2DBF2 ;
   padding: 0;
 }
 .informacion .info {
