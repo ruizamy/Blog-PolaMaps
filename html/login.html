@@ -1,92 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="shortcut icon" href="../img/iconCerveza.webp" type="icon de una cervez">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <main>
+    <div class="contenedor">
+      <div class="caja__trasera">
+        <article class="login__trasera">
+          <h3>¿Ya tienes una cuenta?</h3>
+          <p>Inicia sesión para entrar en la página</p>
+          <button id="inicio">Inicio de sesión</button>
+        </article>
+        <article class="register__trasera">
+          <h3>¿Aun no tienes una cuenta?</h3>
+          <p>Registrate para el inicio de sesión</p>
+          <button id="register">Registrase</button>
+        </article>
+      </div>
+      <div class="contenedor__login-register">
+        <form action="" class="login">
+          <h2>Iniciar sesión</h2>
+          <input id="correo_sesion" type="text" placeholder="Correo Electronico" required>
+          <input id="password_sesion" type="password" placeholder="contraseña" required>
+          <button id="enter" type="submit">Entrar</button>
+        </form>
 
-<!doctype html>
+      <form id="form__register" action="" class="register">
+        <h2>Registrase</h2>
+        <input id="usuario" class="information" type="text" placeholder="Usuario" required="">
+        <input id="correo" class="information" type="email" placeholder="Correo Electronico" required="">
+        <input id="password" class="information" type="password" placeholder="Contraseña" required>
+        <button id="btn_registro" type="submit">Registrarse</button>
+      </form>
+      </div>
+      
+    </div>
 
-
-<html lang="es">
-    
-    <head>
-        
-        <meta charset="utf-8">
-        
-        <title> Formulario de Acceso </title>    
-        
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <meta name="author" content="Bares y Restaurantes">
-
-        <meta name="description" content="Muestra de un formulario de acceso en HTML y CSS">
-        <meta name="keywords" content="Formulario Acceso, Formulario de LogIn">
-        
-        <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet"> 
-        <link href="https://fonts.googleapis.com/css?family=Overpass&display=swap" rel="stylesheet">
-        <link rel="shortcut icon" href="img/icons8-cerveza-60.png" type="image/x-icon">
-        <script src="https://kit.fontawesome.com/de4f5a14b9.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="../css/menu.css">
-        
-        <link rel="stylesheet" href="../css/login.css">
-        
-        <script type="text/javascript">
-        
-        </script>
-        
-    </head>
-    
-    <body>
-     
-
-        <div class="navegacion">
-            <header>    
-              <nav class="navbar">
-              <div class="header-logo"> 
-                <a href="index.html">
-                  <img src="../img/logoPolaMap.webp" alt="LogoPaginaPolaMap">
-                 </a>
-              </div>
-              <h2 class="menu menu2">Menu</h2>
-              <div class="desplegable">
-              </div>
-              <ul class="lista tamaño">
-          
-                <li><a href="../index.html" class="direc anima">Home</a></li>
-                <li><a href="../html/boletas.html" class="direc anima">Boletas</a></li>
-                <li><a href="../html/acercaNosotros.html" class="direc anima">Nosotros</a></li>
-                <li><a href="../html/adminCovers.html"class="direc anima">Administrador Boletas</a></li> 
-                <li><a href="../html/adminBares.html"class="direc anima">Administrador bares</a></li> 
-                <li><a href="../html/contactenos.html"class="direc anima">Contactenos</a></li>          
-              </ul>
-              </nav>
-              </header>
-            </div>
-
-         <main>
-
-        <div id="container">
-            <div id="central">
-                <div id="login">
-                    <div class="titulo">
-                        Bienvenido
-                    </div>
-                    <form id="loginform">
-                        <input type="text" name="usuario" placeholder="Usuario" required>
-                        
-                        <input type="password" placeholder="Contraseña" name="password" required>
-                        
-                        <button type="submit" title="Ingresar" name="Ingresar">Login</button>
-                    </form>
-                    <div class="pie-form">
-                        <a href="#">¿Perdiste tu contraseña?</a>
-                        <a href="#">¿No tienes Cuenta? Registrate</a>
-                    </div>
-                </div>
-                <div class="inferior">
-                    <a href="#">Volver</a>
-                </div>
-            </div>
-        </div>
-
-    </main> 
-
-        <script src="../js/js.js"></script> 
-          
-    </body>
+  </main>
+  <script src="../js/register.js"></script>
+  <script src="../js/function.js"></script>
+  <script src="../js/contactenos.js"></script>
+</body>
 </html>
