@@ -1,8 +1,34 @@
 @import url(../css/menu.css);
 
-.row.featurette {
-    flex-wrap: nowrap;
+
+.navbar{
+  background-color: #d8c054;
+  flex-direction: row;
+  width: 100%;
+  justify-content:space-between;
+  padding: 5px;
+  position:relative;
 }
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  color: #000000;
+  border-radius: 20px;
+  transition: all 500ms;
+  cursor: pointer;
+}
+.header-logo{        
+  width: 80%;
+}
+.header-logo a img{
+  padding: 0;
+  background-color: #FCF8FF;
+  border-radius: 15px;
+  border:  #000 solid;  
+  width: 170px;
+}
+
 
 .sobrenosotros .col-md-5>img {
   background-color: #FDDB31;
@@ -11,4 +37,9 @@
   padding: 20px;
   height: 10%;
   border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+}
+.col-md-7{
+  width: 30%;
 }
