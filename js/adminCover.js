@@ -27,6 +27,7 @@ document.getElementById("botonAñadir").addEventListener("click", function (even
   let van = true
 
   if (productoAñadir == '' || valorAñadir == '' || existenciaAñadir == '' || imagenAñadir == ''|| infoAñadir == '') {
+    alert('Por favor compruebe que todos los campos estan llenos') 
       mensaje.classList.add('llenarCampos')
       setTimeout(() => { mensaje.classList.remove('llenarCampos') }, 2500)
       van = false
@@ -34,6 +35,7 @@ document.getElementById("botonAñadir").addEventListener("click", function (even
   else {
       for (let i = 0; i < productos.length; i++) {
           if (productos[i].nombre == productoAñadir) {
+            alert('Este elemento ya existe') 
               mensaje.classList.add('repetidoError')
               setTimeout(() => { mensaje.classList.remove('repetidoError') }, 2500)
               van = false
@@ -49,6 +51,7 @@ document.getElementById("botonAñadir").addEventListener("click", function (even
           urlImagen: imagenAñadir,
           info: infoAñadir
       })
+      alert('realizado')
       mensaje.classList.add('realizado')
       setTimeout(() => {
           mensaje.classList.remove('repetidoError')
@@ -70,6 +73,7 @@ document.getElementById("botonEditar").addEventListener("click", function (event
   let nuevoAtributo = nuevoAtributoEd.value
   let van = false
   if (productoEditar == '' || atributoEditar == '' || nuevoAtributo == '') {
+    alert('Por favor compruebe que todos los campos estan llenos')
       mensaje.classList.add('llenarCampos')
       setTimeout(() => { mensaje.classList.remove('llenarCampos') }, 2500)
   }
@@ -81,6 +85,7 @@ document.getElementById("botonEditar").addEventListener("click", function (event
           }
       }
       if (van == true) {
+        alert('Realizado')
           mensaje.classList.add('realizado')
           setTimeout(() => {
               mensaje.classList.remove('realizado')
@@ -88,6 +93,7 @@ document.getElementById("botonEditar").addEventListener("click", function (event
           }, 1500);
       }
       else {
+        alert('Este elemento no existe')
           mensaje.classList.add('noExisteError')
           setTimeout(() => { mensaje.classList.remove('noExsiteError') }, 2500);
       }
@@ -111,10 +117,12 @@ document.getElementById("botonEliminar").addEventListener("click", function (eve
   }
 
   if (van == false) {
+        alert('Este elemento no existe')
       mensaje.classList.add('noExsiteError')
       setTimeout(() => { mensaje.classList.remove('noExsiteError') }, 2500);
   }
   else {
+    alert('Realizado')
       mensaje.classList.add('realizado')
       setTimeout(() => {
           mensaje.classList.remove('realizado')
