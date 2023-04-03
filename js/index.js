@@ -10,6 +10,6 @@ let productos = obtenerAlmacenamientoLocal('bares') || [];
 let contenedor = document.getElementById('contenedorBares')
 window.addEventListener('load', ()=>{
   for (let i = 0; i < productos.length; i++){
-      contenedor.innerHTML +=`<div><img src="${productos[i].urlImagen}" alt="Informacion de bar"><div class="informacion"><p>${productos[i].nombre}</p><p class="info">${productos[i].info}</p><div><button>Comprar</button></div></div>` 
+      contenedor.innerHTML +=`<div><img src="${productos[i].urlImagen}" alt="Informacion de bar"><div class="informacion"><p>${productos[i].nombre}</p><p class="info">${productos[i].info}</p><div><a href="../html/boletas.html"><button>Comprar</button></a></div></div>` 
   }
 })
