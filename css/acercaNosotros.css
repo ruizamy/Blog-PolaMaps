@@ -1,8 +1,5 @@
 @import url(../css/menu.css);
 
-.row.featurette {
-    flex-wrap: nowrap;
-}
 
 .sobrenosotros .col-md-5>img {
   background-color: #FDDB31;
@@ -11,4 +8,13 @@
   padding: 20px;
   height: 10%;
   border-radius: 10px;
+}
+.navbar{
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  width: 100vw;
+}
+.header-logo{
+  width: 20%;
 }
