@@ -11,47 +11,65 @@ body {
   overflow-x: hidden;
   width: 100%;
   height: 100%;
-  background-color: #FCF8FF;
-}
-.Mapa{
-  background-color: #FDDB31;
-  border:#000 solid;
-  margin: 30px;
-  padding: 20px;
-  height: 10%;
-  border-radius: 10px;
-  align-items: center;
-}
-.ttmapa{
-  font-size: 1.5em;
-  text-align: center;
-  border: #000;
-  margin-left: 40p;
-  background-color: #C2DBF2;
-}
-iframe{
-  width: 100%;
-}
+  background: linear-gradient(rgb(20, 20, 20),rgba(5,7,12,0.5)), url("../img/fond2.svg")center/cover;
+  background-attachment:fixed;
 
+}
+.boletas{
+  background: #141414;
+  padding: 20px;
+  color: #FCF8FF;
+  font-size: 40px;
+  margin: 0 40px 40px;
+  text-align: center;
+}
+.map{
+  padding: 50px;
+  background: #141414;
+}
+.presentacion{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 40px 10%;
+}
+.presentacion img{
+  width: 50%;
+}
+.presentacion h2{
+  color: #87fe93;
+  font-size: 35px;
+  padding-bottom:20px;
+}
+.presentacion p{
+  color: #FCF8FF;
+  font-size: 20px;
+  line-height : 25px;
+  padding-bottom: 20px;
+}
+.presentacion span{
+  color: #e8fe87;
+  font-size: 25px;
+}
+.presentacion div a{
+  text-decoration: none;
+  font-size: 25px;
+  color: #FCF8FF;
+}
+.presentacion div a span{
+  font-size: 25px;
+  padding-left: 20px;
+  transition: all 400ms;
+}
+.presentacion div a:hover span{
+  padding-left: 30px;
+  letter-spacing: 5px;
+  
+}
 .main{
   height: 80%;
 }
 
-.ttcontenedor {
-  font-size: 1.5em;
-  text-align: center;
-  border: #000 solid;
-  width: 50%;
-  margin: 1% 25% 0% 25%;
-  background-color: #C2DBF2;
-  border-radius: 10px;
-}
-.botondebuscar {
-  font-size:medium;
-  text-align: left;
-  width: 50%;
-  margin: 1% 25% 3% 25%;
-}
 
 
 /* Cards Alexa */
@@ -64,57 +82,61 @@ iframe{
   margin-bottom: 20px;
 }
 .contenedor img {
-  width: 400px;
-  height: 340px;
+  width: 100%;
+  height: 250px;
   object-fit: cover;
-  border-radius: 20px 20px 0px 0px;
 }
 .contenedor>div{
-  border: #000 solid;
-  background-color: #C2DBF2;
-  border-radius: 25px 25px 25px 25px;
+  width: 23%;
+  min-width: 300px;
+  border: 10px #87fe93 solid;
+  background-color: #141414;
+  color: #FCF8FF;
+  font-size: 20px;
+  transition: all 300ms;
 }
 .contenedor>div:hover{
-  background-color: #FDDB31;
+  border: 10px #4a8850 solid;
 }
-
 .informacion{
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding: 15px 5px;
   gap: 15px;
 }
 .informacion>p:first-child{
-  font-family: 'Rhodium', sans-serif;
-  font-size: 25px;
+  font-size: 32px;
   font-weight: 300;
   font-weight: bold;
 }
 
 .informacion button{
   background-color: #FCF8FF;
-  width: 100px;
-  height: 35px;
-  border-radius: 10px;
+  padding: 7px 20px;
   border: #000 solid;
-  font-size: 17px;
+  font-size: 25px;
   font-weight: 300;
   cursor: pointer;
   margin-bottom: 40px;
+  transition: all 400ms;
 }
 .informacion button:hover{
-  background-color: #C2DBF2 ;
-  padding: 0;
+  font-size: 22px;
 }
 .informacion .info {
-  width: 400px;
-  padding:20px;
+  width: 100%;
+  padding:10px;
   word-wrap: break-word;
   text-align: center;
   
 }
-
+hr{
+  padding: 2px;
+  background-color: #FCF8FF;
+  margin: 10px;
+}
 
 @media(max-width:1200px){
   
@@ -125,5 +147,20 @@ iframe{
     align-items: center;
   }
  
+}
+@media(max-width:1000px){
+  .presentacion img{
+    display: none;
+  }
+  .map{
+    width: 100%;
+  }
+  .presentacion:last-child{
+    text-align: center;
+    display: block;
+  }
+  .presentacion iframe{
+    width: 100%;
+  }
 }
 
