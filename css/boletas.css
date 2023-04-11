@@ -7,17 +7,12 @@
 }
 
 body{
- font-family: 'Rhodium', sans-serif;
   overflow-x: hidden;
   width: 100%;
   height: 100%;
-  background-color: #FCF8FF ;
+  background:linear-gradient(rgb(20, 20, 20),rgba(5,7,12,0.5)),url("../img/ticket.svg") ;
   background-attachment: fixed;
 }
-.navegacion{
-  height: 10vh;
-}
-
 .banner{
   background-image: url("../img/baner.webp");
   background-size: cover;
@@ -26,6 +21,7 @@ body{
   width: 100vw;
   height: 270px;
   margin-bottom: 20px;
+  margin-top: -70px;
 }
 
 .banner h2{
@@ -44,7 +40,7 @@ body{
   color:#FCF8FF;
   text-shadow: -3px 25px 50px -1px rgb(254, 254, 254);
   font-weight: bold;
-  text-shadow:#000000;
+  text-shadow:#ffffff;
 }
 /* Cards Alexa */
 
@@ -52,23 +48,31 @@ body{
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 50px;
+  gap: 30px;
   margin-bottom: 20px;
 }
 .contenedor img {
-  width: 400px;
-  height: 340px;
+  width: 100%;
+  height: 60%;
   object-fit: cover;
-  border-radius: 20px 20px 0px 0px;
   
 }
 .contenedor>div{
-  background-color: #ffe604;
-  border-radius: 24px;
-  border:#000000 solid;
+  background:url("../img/fond2.svg") no-repeat;
+  background-color: #ffffffbb;
+  background-position: bottom;
+  background-size: 110%;
+  border:7px #000000 solid;
+  color: #ffffff;
+  font-size: 23px;
+  width: 24%;
+  min-width: 300px;
+  height: fit-content;
+  -webkit-text-stroke:1px #000000;
+  transition: all 300ms;
 }
 .contenedor>div:hover{
-  background-color: #C2DBF2;
+  border: 9px solid #ffffff;
 }
 
 .informacion{
@@ -79,41 +83,41 @@ body{
   gap: 15px;
 }
 .informacion>p:first-child{
-  font-family: 'Rhodium', sans-serif;
-  font-size: 25px;
+  font-size: 30px;
   font-weight: 300;
   font-weight: bold;
 }
 .informacion .precio {
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 500;
   font-style: italic;
 }
-.informacion .precio span{
-  font-size: 17px;
-  font-weight: 300;
-}
+
 .informacion .info {
-  width: 400px;
-  padding:20px;
+  width: 100%;
+  padding:10px;
   word-wrap: break-word;
   text-align: center; 
+  font-size: 22px;
 }
 
 .informacion button{
   background-color: #FCF8FF;
-  width: 100px;
-  height: 35px;
   border-radius: 10px;
+  padding: 5px 10px;
   border: #000000 solid;
-  font-size: 17px;
+  font-size: 25px;
   font-weight: 300;
   cursor: pointer;
   margin-bottom: 40px;
+  transition: all 300ms;
+  color: #545454;
 }
 .informacion button:hover{
-  background-color: #FDDB31;
-  padding: 0;
+background: linear-gradient(49deg, rgba(47,45,45,0.9024859943977591) 0%, rgb(146, 146, 146) 100%);
+  padding:7px 12px;
+  color: #ffffff;
+
 }
 
 /* 
