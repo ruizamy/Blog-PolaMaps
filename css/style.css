@@ -19,6 +19,7 @@ body{
   0%{background-position:0 50% ;}
   50%{background-position:100% 50% ;}
   100%{background-position:0 50% ;}
+
 }
 main{
   width: 100%;
@@ -43,8 +44,8 @@ main{
 }
 .caja__trasera article{
   margin: 100px 40px;
-  color: #fff;
   transition: all 500ms;
+  color:#000
 }
 .caja__trasera article p,
 .caja__trasera article button{
@@ -88,6 +89,7 @@ main{
 .contenedor__login-register form{
   width: 100%;
   padding: 80px 20px;
+
   background:url("../img/fondo\ \(1\).svg");
   background-color: #f2f2f2;
   border: solid 2px #fff;
@@ -110,7 +112,7 @@ main{
   margin-top: 20px;
   padding: 10px ;
   border: none;
-  background: #f2f2f2;
+  background: #FCF8FF;
   font-size: 16px;
   outline: none;
 }

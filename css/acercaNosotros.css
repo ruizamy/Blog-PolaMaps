@@ -1,7 +1,6 @@
 @import url(../css/menu.css);
 body{
 background: linear-gradient(0deg, rgb(165, 165, 165) 0%, rgba(20,20,20,1) 60%, rgba(20,20,20,1) 100%);
-
 }
 .navbar{
   padding: 5px 0;
@@ -29,7 +28,6 @@ background: linear-gradient(0deg, rgb(165, 165, 165) 0%, rgba(20,20,20,1) 60%, r
 .nosotros p{
   font-size: 22px;
   color: #fff;
-
 }
 .nosotros img{
   width: 50%;
@@ -137,4 +135,5 @@ section img{
 
   55%{margin-left: -100%;}
   95%{margin-left: -100%;}
+
 }
