@@ -10,7 +10,7 @@
 body{
   height: 100vh;
   width: 100%;
-  background:linear-gradient(rgba(20, 20, 20, 0.663)50%,rgba(159, 159, 159, 0.5)),url("../img/concer.svg")center;
+  background:linear-gradient(rgba(20, 20, 20, 0.663)50%,rgba(159, 159, 159, 0.5)),url("../../img/concer.svg")center;
   background-color: #fff;
   background-size: 150%;
   animation: color 12s ease-in-out infinite;
@@ -88,7 +88,7 @@ main{
 .contenedor__login-register form{
   width: 100%;
   padding: 80px 20px;
-  background:url("../img/fondo\ \(1\).svg");
+  background:url("../../img/fondo\ \(1\).svg");
   background-color: #f2f2f2;
   border: solid 2px #fff;
   background-position: bottom ;
