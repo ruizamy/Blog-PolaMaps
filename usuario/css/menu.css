@@ -90,7 +90,7 @@
    
 }
 .list:hover{
-   background:url("../img/fondo2.webp") center /cover no-repeat ;
+   background:url("../../img/fondo2.webp") center /cover no-repeat ;
    font-size: 1.7em;
 }
 .direc:hover{
