@@ -15,7 +15,7 @@ body{
   background:linear-gradient(rgba(20, 20, 20, 0.663)50%,rgba(159, 159, 159, 0.5)),url("../../img/concer.svg")center;
   background-color: #fff;
   background-size: 150%;
-  animation: color 12s ease-in-out infinite;
+  
 }
 @keyframes color {
   0%{background-position:0 50% ;}
@@ -41,7 +41,7 @@ main{
   justify-content: center;
   border-radius: 10px;
   margin: auto;
-  background-color: #161616;
+  background-color: #161616f1;
 }
 .caja__trasera article{
   margin: 100px 40px;
@@ -96,6 +96,8 @@ main{
   background-position: bottom ;
   position: absolute;
   border-radius: 20px;
+  background: rgb(104,130,158);
+background: radial-gradient(circle, rgba(104,130,158,1) 5%, rgba(63,76,79,1) 95%, rgba(9,10,17,1) 100%);
 }
 .contenedor__login-register form h2{
   font-size: 30px;
@@ -124,9 +126,11 @@ main{
   cursor: pointer;
   border: 2px solid #ffffff;
 }
+
 .login{
   opacity: 1;
   display: block;
+  
 }
 .register{
   display: none;
