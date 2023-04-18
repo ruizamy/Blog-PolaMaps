@@ -18,7 +18,7 @@ body {
   background-attachment:fixed;
 }
 .boletas{
-  background: #141414a6;
+ 
   padding: 20px;
   color: #FCF8FF;
   font-size: 40px;
@@ -35,9 +35,11 @@ body {
   justify-content: space-around;
   align-items: center;
   padding: 40px 10%;
+  
 }
 .presentacion img{
   width: 50%;
+  border-radius:  10px ;
 }
 .presentacion h2{
   color: #87fe93;
