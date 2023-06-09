@@ -1,0 +1,46 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Roboto:wght@300&display=swap');
+.slider{
+  margin-top: -57px;
+  width:100%;
+  height:60vh;
+  overflow: hidden;
+}
+
+.navbar{
+background: rgb(1,0,8);
+background: linear-gradient(90deg, rgba(1,0,8,1) 3%, rgba(63,76,79,1) 46%, rgba(9,10,17,1) 100%);
+}
+.slider ul{
+  display:flex;
+  animation: cambio 12s infinite alternate linear;
+  width: 300%;
+  height: 100%;
+}
+.carru{
+  width:100%;
+  list-style: none;
+  height: 100%;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+}
+.carru span{
+  color: #ffff;
+  font-size: 50px;
+  font-weight: 500;
+  padding: 5px 100px;
+  margin-bottom: 2%;
+  
+}
+
+@keyframes cambio {
+  0%{margin-left: 0;}
+  30%{margin-left: 0;}
+
+  35%{margin-left: -100%;}
+  65%{margin-left: -100%;}
+
+  70%{margin-left: -200%;}
+  95%{margin-left: -200%;}
+}

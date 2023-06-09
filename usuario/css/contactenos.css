@@ -1,0 +1,63 @@
+
+@import url("./menu.css");
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  overflow-x: hidden;
+  width: 100%;
+  height: 100%;
+  background: rgb(1,0,8);
+  background: linear-gradient(90deg, rgba(1,0,8,1) 3%, rgba(63,76,79,1) 46%, rgba(9,10,17,1) 100%);background-attachment: fixed;
+}
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100vw;
+  background: rgb(1,0,8);
+  background: linear-gradient(90deg, rgba(1,0,8,1) 3%, rgba(63,76,79,1) 46%, rgba(9,10,17,1) 100%);
+}
+.header-logo{
+  width: 20%;
+}
+
+section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0 40px 0;
+}
+
+section h2{
+  color: #000000;
+  font-family: 'Nunito', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-size: 40px;
+}
+
+ article{
+  font-family: 'Rhodium', sans-serif;
+  display: flex;
+  height: 640px;
+  width: 700px;
+  flex-direction: column;
+  background-color: #C2DBF2;
+  border: #000 solid;
+  padding: 10px 30px;
+  border-radius: 10px;
+  
+}
+.pie-pagina{
+  background: rgb(1,0,8);
+  background: linear-gradient(90deg, rgba(1,0,8,1) 3%, rgba(63,76,79,1) 46%, rgba(9,10,17,1) 100%);
+}
+
+@media (max-width:700px){
+  article{
+    height: 680px;
+  }
+ 
+}

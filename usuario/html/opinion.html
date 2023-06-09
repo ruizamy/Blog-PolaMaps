@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opinión</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="./img/icons8-cerveza-60.png" type="image/x-icon">
+</head>
+<body>
+    <div class="navegacion">
+        <header>    
+          <nav class="navbar">
+          <div class="header-logo"> 
+            <a href="#">
+              <img src="./img/logo.png" alt="Logo">
+            </a>
+          </div>
+          <h2 class="menu menu2">Menu</h2>
+          <div class="desplegable">
+          </div>
+          <ul class="lista tamaño">
+            <li class="list"><a href="../index.html" class="direc anima">Home</a></li>
+            <li class="list"><a href="../html/boletas.html" class="direc anima">Boletas</a></li>
+            <li class="list"><a href="../html/acercaNosotros.html" class="direc anima">Nosotros</a></li>
+            <li class="list"><a href="../html/adminCovers.html"class="direc anima">Administrador Boletas</a></li> 
+            <li class="list"><a href="../html/adminBares.html"class="direc anima">Administrador bares</a></li> 
+            <li class="list"><a href="../html/contactenos.html"class="direc anima">Contactenos</a></li>            
+        </ul>
+          </nav>
+        </header>
+      </div>
+   <hr>
+   <main>
+    <section>
+        <article>
+            <img src="../img/logoPolaMap.webp" alt="Bar">
+            <div class="descrip">
+                <h2>Dakiti</h2>
+                <h4>66 Carrera 27 #52, Bogotá</h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo cumque ea dolorem! Exercitationem cumque expedita, enim eius eligendi necessitatibus ducimus illo doloremque, aliquam velit, similique dolorem quam possimus beatae recusandae.</p>
+                <a href="">Opiniones</a>
+            </div>
+        </article>
+    </section>
+    <hr>
+    <section class="ubicacion">
+        <h2 class="ubi-ti">Ubicacion</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1009.3951532602761!2d-74.0764976001305!3d4.641965226080723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9bfaa00a8845%3A0xc0a136310431be78!2sDakiti%20Bar!5e0!3m2!1ses!2sco!4v1676490961833!5m2!1ses!2sco" width="70%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </section>
+    <section>
+        <hr>
+        <button class="desplegar">Escribir una opinion</button>
+        <div class="escribir">
+            <h2 class="expe">Califica tu experiencia<span>(obligatorio)</span></h2>
+            <form class="estre">
+
+                  <input class="puntaje" id="radio1" type="radio" name="estrellas" value="5">
+                  <label class="label" for="radio1">★</label>
+                 <input class="puntaje" id="radio2" type="radio" name="estrellas" value="4">
+                  <label class="label" for="radio2">★</label>
+                 <input class="puntaje" id="radio3" type="radio" name="estrellas" value="3">
+                  <label class="label" for="radio3">★</label>
+                 <input class="puntaje" id="radio4" type="radio" name="estrellas" value="2">
+                  <label class="label" for="radio4">★</label>
+                  <input class="puntaje" id="radio5" type="radio" name="estrellas" value="1">
+                  <label class="label" for="radio5">★</label>
+
+            </form>
+            <form action="" class="form">
+                <label for="nombre">Nombre</label>
+                <input  class="selec" type="text" name="nombre" placeholder="Nombre completo">               
+                <label for="opinion">Puedes darnos tu opinion sobre este lugar<span>(obligatorio)</span> </label>
+                <textarea class="selec" name="opinion" id="opinion" cols="30" rows="10" placeholder="Escriba su opinion" required></textarea>
+                <label for="dia">Cuando fuiste<span>(obligatorio)</span></label>
+                <input class="selec" type="date" id="dia" required>
+                <button class="opini">Subir su opinión</button>
+            </form>
+        </div>
+        <hr>
+    </section>
+    <div class="calificacion">
+        <section class="total ">
+            <p>Cantidad de opiniones</p>
+            <p class="clasificacion"> 
+                <input id="radio1" type="radio" name="estrellas" value="5">
+                <label class="label" for="radio1">★</label>
+                 <input id="radio2" type="radio" name="estrellas" value="4">
+                  <label class="label" for="radio2">★</label>
+                 <input id="radio3" type="radio" name="estrellas" value="3">
+                  <label class="label" for="radio3">★</label>
+                 <input id="radio4" type="radio" name="estrellas" value="2">
+                  <label class="label" for="radio4">★</label>
+                  <input id="radio5" type="radio" name="estrellas" value="1">
+                  <label class="label" for="radio5">★</label>
+                </p>
+            <div class="bar">
+                <p>excelente</p>
+            <div class="progress" role="progressbar" style="width: 40%;"></div>
+            </div>
+            <div class="bar">
+                <p>bueno</p>
+                <div class="progress" role="progressbar" style="width: 30%"></div>
+            </div>
+            <div class="bar">
+                <p>promedio</p>
+            <div class="progress" role="progressbar"  style="width: 10%;"></div>
+            </div>
+            <div class="bar">
+                <p>malo</p>
+            <div class="progress" role="progressbar" style="width: 10%;"></div>
+            </div>
+            <div class="bar">
+                <p>horrible</p>
+            <div class="progress" role="progressbar" style="width: 10%;"></div>
+            </div>
+        </section>
+        <section class="extra-opinion">
+            <article class="nom">
+                <h5>Nombre</h5>
+                <p>CALIFICACION</p>
+                <H6>TITULO DE LA CALIFICACION</H6>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate quae non in voluptas aliquid perferendis, saepe esse officiis iure et aliquam temporibus provident autem odit ipsam ullam itaque? Sed, quidem!</p>
+            </article>
+            <article class="nom">
+                <h5>Nombre</h5>
+                <p>CALIFICACION</p>
+                <H6>TITULO DE LA CALIFICACION</H6>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate quae non in voluptas aliquid perferendis, saepe esse officiis iure et aliquam temporibus provident autem odit ipsam ullam itaque? Sed, quidem!</p>
+            </article>
+    
+        </section>
+
+    </div>
+    
+   </main>
+   <footer>
+     <p>&copy;  Derechos reservados a Facturando en Dolares</p>
+   </footer>
+   <script src="../js/js.js"></script>
+   <script src="../js/indexDB.js"></script>
+</body>
+</html>

@@ -1,0 +1,230 @@
+@import url(../css/menu.css);
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  overflow-x: hidden;
+  width: 100%;
+  height: 100%;
+  background: rgb(1,0,8);
+  background: linear-gradient(90deg, rgba(1,0,8,1) 3%, rgba(63,76,79,1) 46%, rgba(9,10,17,1) 100%);
+  background-attachment: fixed;
+}
+.navbar{
+  background: rgb(1,0,8);
+background: linear-gradient(90deg, rgba(1,0,8,1) 3%, rgba(63,76,79,1) 46%, rgba(9,10,17,1) 100%);
+}
+.banner{
+  background-image: url("../../img/baner.webp");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 270px;
+  margin-bottom: 20px;
+  margin-top: -70px;
+}
+
+.banner h2{
+  z-index: 1;
+  text-align: center;
+  padding-top: 45px;
+  font-size: 50px;
+  color: #FCF8FF;
+}
+
+.banner p{
+  z-index: 1;
+  text-align: center;
+  padding: 50px;
+  font-size: 30px;
+  color:#FCF8FF;
+  text-shadow: -3px 25px 50px -1px rgb(254, 254, 254);
+  font-weight: bold;
+  text-shadow:#ffffff;
+}
+/* Cards Alexa */
+
+.contenedor{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+.contenedor img {
+  width: 100%;
+  height: 60%;
+  object-fit: cover;
+  
+}
+.contenedor>div{
+  background:url("../../img/fond2.svg") no-repeat;
+  background-color: #ffffffbb;
+  background-position: bottom;
+  background-size: 110%;
+  border:7px #000000 solid;
+  color: #ffffff;
+  font-size: 23px;
+  width: 24%;
+  min-width: 300px;
+  height: fit-content;
+  -webkit-text-stroke:1px #000000;
+  transition: all 300ms;
+}
+.contenedor>div:hover{
+  border: 9px solid #ffffff;
+}
+
+.informacion{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+}
+.informacion>p:first-child{
+  font-size: 30px;
+  font-weight: 300;
+  font-weight: bold;
+}
+.informacion .precio {
+  font-size: 25px;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.informacion .info {
+  width: 100%;
+  padding:10px;
+  word-wrap: break-word;
+  text-align: center; 
+  font-size: 22px;
+}
+
+.informacion button{
+  background-color: #FCF8FF;
+  border-radius: 10px;
+  padding: 5px 10px;
+  border: #000000 solid;
+  font-size: 25px;
+  font-weight: 300;
+  cursor: pointer;
+  margin-bottom: 40px;
+  transition: all 300ms;
+  color: #545454;
+}
+.informacion button:hover{
+background: linear-gradient(49deg, rgba(47,45,45,0.9024859943977591) 0%, rgb(146, 146, 146) 100%);
+  padding:7px 12px;
+  color: #ffffff;
+
+}
+.pie-pagina{
+  background: rgb(1,0,8);
+  background: linear-gradient(90deg, rgba(1,0,8,1) 3%, rgba(63,76,79,1) 46%, rgba(9,10,17,1) 100%);
+}
+
+/* 
+.container__eventos{
+  display: grid;
+  align-content: center;
+  left: 100px;
+  grid-template-columns: 40% 40%;
+  grid-template-rows: 350px 400px;
+  gap: 6em;
+  row-gap: 5em;
+  padding-top: 2em;
+  padding-left: 12em;
+}
+
+.container__eventos p{
+  padding: 20px;
+  text-align: justify;
+}
+
+.container__eventos .card div{
+  position: absolute;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 30px;
+  margin-bottom: 10px;
+  box-shadow: 4px 4px 5px 10px rgba(0,0,0,0.5);
+  width: 400px;
+  height: 350px;
+  align-items: center;
+  backface-visibility: hidden;
+  transition: 1s;
+  z-index: -1;
+}
+
+.container__eventos .card img{
+  width: 100%;
+  height: 250px;
+  background-size: cover;
+  margin-bottom: 20px; 
+  border-radius: 20px;
+}
+
+.container__eventos .card .Trasera{
+  transform: perspective(600px) rotateY(180deg);
+  background: rgb(3, 35, 54,10);
+  color: #fff;
+  text-align: center;
+}
+
+
+.container__eventos button{
+  padding: 10px 20px;
+  background-color: #000000;
+  border: none;
+  border-radius: 20px;
+  margin-top: 20px;
+  box-shadow: rgba(0,0,0,0.5);
+  color: #fff;
+} 
+
+button a{
+  text-decoration: none;
+  color: #fff;
+}
+
+.card:hover .Frontal{
+  transform: perspective(600px) rotateY(180deg);
+}
+
+.card:hover .Trasera{
+  transform: perspective(600px) rotateY(360deg);
+  z-index: 1;
+}
+
+button:hover {
+  padding: 15px 25px;
+  background-color: rgba(78, 52, 9, 0.9);
+}
+*/
+
+
+@media (max-width:990px){
+  .container__eventos{
+    display: grid;
+    align-content: center;
+    left: 100px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 300px 300px 300px 300px;
+    gap: 6em;
+    row-gap: 5em;
+    padding-top: 2em;
+    padding-left: 12em;
+    padding-bottom: 80px;
+  }
+
+  .pie-pagina{
+    display:flex;
+  }
+}
+
